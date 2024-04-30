@@ -1,0 +1,21 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+
+
+
+  jwt:
+    secret: eliceproject2eliceproject2eliceproject2eliceproject2
+
+
+
+  # spring data jpa 설정
+  jpa:
+    hibernate:
+      ddl-auto: update # create 처음 실행시 sql 테이블 생성 이후에는 none 으로 설정
+    show-sql: true
+    defer-datasource-initialization: true
